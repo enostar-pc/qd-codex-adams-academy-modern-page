@@ -90,14 +90,14 @@ const CoursesPage = () => {
 
               {/* Subjects Tags */}
               <div className="w-full lg:w-1/3 flex flex-wrap justify-center lg:justify-start gap-2 pt-8 lg:pt-0 border-t lg:border-t-0 lg:border-l border-white/5 lg:pl-12">
-                <div className="w-full text-muted-foreground font-body text-[10px] uppercase tracking-[0.2em] mb-4 text-center lg:text-left">
+                <div className="w-full text-muted-foreground font-body text-[15px] uppercase tracking-[0.2em] mb-4 text-center lg:text-left font-bold">
                   Key Subjects
                 </div>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-2">
                   {course.subjects.map((subject, sIdx) => (
                     <span 
                       key={sIdx}
-                      className="px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-white/5 bg-white/[0.02] text-foreground/80 text-[10px] md:text-xs font-body group-hover:border-white/10 transition-all"
+                      className="px-4 md:px-6 py-2 md:py-3 rounded-full border border-white/10 bg-white/[0.04] text-foreground/90 text-[15px] md:text-lg font-body group-hover:border-white/20 transition-all shadow-sm"
                     >
                       {subject}
                     </span>
@@ -106,11 +106,11 @@ const CoursesPage = () => {
               </div>
 
               {/* Hover Arrow */}
-              <div className="hidden lg:flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ml-auto">
-                <div className="w-12 h-12 rounded-full border border-[#E60000]/30 flex items-center justify-center">
+              <a href="#contact" className="hidden lg:flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ml-auto">
+                <div className="w-12 h-12 rounded-full border border-[#E60000]/30 flex items-center justify-center hover:bg-[#E60000]/10 transition-colors">
                   <span className="text-[#E60000] text-2xl">→</span>
                 </div>
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>

@@ -42,12 +42,17 @@ function App() {
       <div className="relative z-10 min-h-screen flex flex-col items-center">
         <main className="flex-grow flex flex-col items-center justify-center text-center px-6 pt-32 pb-40">
           <h1 
-            className="animate-fade-rise text-5xl sm:text-7xl md:text-8xl leading-[0.95] tracking-tight max-w-7xl font-normal text-foreground"
-            style={{ fontFamily: "var(--font-display)" }}
+            className="animate-fade-rise text-6xl sm:text-8xl md:text-[8rem] xl:text-[10rem] leading-[0.85] font-black text-foreground uppercase tracking-[-0.04em]"
+            style={{ fontFamily: "'Outfit', sans-serif" }}
           >
-            Shape Your <em className="not-italic text-muted-foreground">Future</em> with
-            <br className="sm:hidden" />
-            <em className="not-italic text-muted-foreground"> Adams Academy.</em>
+            Shape Your <br className="hidden md:block" />
+            <span 
+              className="text-[#E60000] lowercase italic font-normal px-2"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              Future
+            </span> 
+            with Adams
           </h1>
           
           <p className="animate-fade-rise-delay text-muted-foreground text-base sm:text-lg max-w-2xl mt-8 leading-relaxed font-body">

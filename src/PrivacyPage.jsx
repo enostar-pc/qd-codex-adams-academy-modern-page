@@ -76,7 +76,7 @@ const PrivacyPage = ({ onBack }) => {
       <div className="fixed inset-0 bg-black/40 z-[1] pointer-events-none" />
 
       {/* Navigation Header */}
-      <nav className="relative z-50 py-8 px-6 md:px-12 border-b border-white/5 bg-background/20 backdrop-blur-xl">
+      <nav className="relative z-50 py-4 px-6 md:px-12 border-b border-white/5 bg-background/20 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <button 
             onClick={onBack}
@@ -85,11 +85,8 @@ const PrivacyPage = ({ onBack }) => {
             <UilArrowLeft className="group-hover:-translate-x-1 transition-transform" />
             <span className="text-sm uppercase tracking-widest font-medium">Back to Home</span>
           </button>
-          <div 
-            className="text-2xl md:text-3xl tracking-tight text-foreground"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            QD<span className="text-[#E60000]">CODEX</span>
+          <div className="h-16 md:h-20 w-auto">
+            <img src="/qdlogo1.png" alt="QDCODEX Logo" className="h-full w-auto object-contain" />
           </div>
         </div>
       </nav>
@@ -167,8 +164,8 @@ const PrivacyPage = ({ onBack }) => {
       <footer className="relative z-10 py-16 px-6 md:px-12 border-t border-white/5 bg-background/20 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-4">
-             <div className="text-xl md:text-2xl tracking-tighter text-foreground" style={{ fontFamily: "var(--font-display)" }}>
-                QD<span className="text-[#E60000]">CODEX</span>
+             <div className="h-8 md:h-10 w-auto">
+                <img src="/qdlogo1.png" alt="QDCODEX Logo" className="h-full w-auto object-contain" />
              </div>
              <div className="w-[1px] h-6 bg-white/10" />
              <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">

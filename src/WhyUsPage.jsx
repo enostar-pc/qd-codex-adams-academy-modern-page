@@ -83,10 +83,10 @@ const WhyUsPage = () => {
             transition={{ duration: 1 }}
             className="lg:w-1/2 w-full relative"
           >
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-[#E60000]/10 blur-3xl rounded-[3rem] opacity-50 group-hover:opacity-75 transition-opacity" />
+            <div className="relative group mb-6 md:mb-8">
+              <div className="absolute -inset-2 bg-[#E60000]/5 blur-2xl rounded-[3rem] opacity-30 group-hover:opacity-50 transition-opacity" />
               
-              <div className="relative z-10 overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl">
+              <div className="relative z-10 overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl bg-black/20">
                 <motion.video 
                   ref={videoRef}
                   src="/demo.mp4" 
@@ -104,16 +104,21 @@ const WhyUsPage = () => {
                 {/* Mute/Unmute Toggle */}
                 <button 
                   onClick={toggleMute}
-                  className="absolute bottom-6 left-6 z-20 liquid-glass p-4 rounded-2xl border border-white/10 text-white hover:bg-white/10 transition-all active:scale-95"
+                  className="absolute bottom-6 left-6 z-20 bg-black/40 backdrop-blur-md p-4 rounded-2xl border border-white/10 text-white hover:bg-black/60 transition-all active:scale-95"
                   title={isMuted ? "Unmute" : "Mute"}
                 >
                   {isMuted ? <UilVolumeMute size="20" /> : <UilVolume size="20" />}
                 </button>
               </div>
+            </div>
 
-              <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 liquid-glass p-6 md:p-8 rounded-3xl border border-white/10 z-20">
-                <div className="text-3xl md:text-4xl font-display text-foreground">100%</div>
-                <div className="text-muted-foreground font-body text-[10px] uppercase tracking-[0.2em]">Academic Success</div>
+            <div className="bg-background/40 backdrop-blur-xl p-6 md:p-8 rounded-[2rem] border border-white/10 shadow-xl flex items-center justify-between">
+              <div>
+                <div className="text-muted-foreground font-body text-[10px] uppercase tracking-[0.2em] mb-1">Our Track Record</div>
+                <div className="text-3xl md:text-5xl font-display text-foreground leading-none">100% <span className="text-xl md:text-2xl text-muted-foreground font-body ml-2">Academic Success</span></div>
+              </div>
+              <div className="w-12 h-12 rounded-full bg-[#E60000]/10 flex items-center justify-center border border-[#E60000]/20">
+                <UilTrophy className="text-[#E60000]" size="24" />
               </div>
             </div>
           </motion.div>

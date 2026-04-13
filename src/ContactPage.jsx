@@ -136,7 +136,7 @@ const ContactPage = () => {
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ delay: 0.2 }}
-           className="mt-20 relative rounded-[3rem] overflow-hidden border border-white/10 h-[450px] group"
+           className="mt-20 relative rounded-[1.65rem] overflow-hidden border border-white/10 h-[450px] group"
         >
           <motion.div
             initial={{ filter: "grayscale(1)", opacity: 0.6 }}
